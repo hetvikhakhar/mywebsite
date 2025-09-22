@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Annual Sports Day - Event Schedule</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Print Numbers 1 to 100</title>
 </head>
 <body>
+  <div id="numbers"></div>
 
-  <h1>ANNUAL SPORTS DAY - SEQUENCE OF EVENTS</h1>
-
-  <table>
-    <tr>
-      <th>Time</th>
-      <th>Event</th>
-    </tr>
-    <tr>
-      <td>8:00 am - 9:00 am</td>
-      <td>Cultural Events</td>
-    </tr>
-    <tr>
-      <td>9:00 am - 1:00 pm</td>
-      <td>Track Events</td>
-    </tr>
-    <tr>
-      <td>1:00 pm - 2:00 pm</td>
-      <td>Prize Distribution</td>
-    </tr>
-  </table>
-
+  <script>
+    const container = document.getElementById('numbers');
+    for (let i = 1; i <= 100; i++) {
+      container.innerHTML += i + "<br>";
+    }
+  </script>
 </body>
 </html>
