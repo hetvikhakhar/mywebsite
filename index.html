@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Print Numbers 1 to 100</title>
+  <title>Print Alphabets A to Z</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #alphabets {
+      font-size: 24px;
+      letter-spacing: 5px;
+    }
+  </style>
 </head>
 <body>
-  <div id="numbers"></div>
+  <h1>Alphabets A to Z</h1>
+  <div id="alphabets"></div>
 
   <script>
-    const container = document.getElementById('numbers');
-    for (let i = 1; i <= 100; i++) {
-      container.innerHTML += i + "<br>";
+    const container = document.getElementById('alphabets');
+
+    // Loop through ASCII codes for A-Z (65 to 90)
+    let alphabets = '';
+    for (let i = 65; i <= 90; i++) {
+      alphabets += String.fromCharCode(i) + ' ';
     }
+
+    container.textContent = alphabets.trim();
   </script>
 </body>
 </html>
